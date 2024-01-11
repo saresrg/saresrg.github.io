@@ -953,12 +953,21 @@
 <p>145.170 MHz<br />
 negative offset<br />
 PL 94.8 Hz</p>
-<p>We also meet on other repeaters and simplex channels. Please download the Simplex Rotation Schedule (<a href="https://github.com/saresrg/Net-Control-Docs/releases/latest">SARES-simplex-rotation-2024.pdf</a>).</p>
+<p>We also meet on other repeater and simplex channels. Please download the <em>Simplex Rotation Calendar</em>
+(<a href="https://github.com/saresrg/Net-Control-Docs/releases/latest">SARES-simplex-rotation-2024.pdf</a>)
+for a full schedule.</p>
+<p>The simplex frequency for <span id="this_month"></span> is <span id="frequency"></span> MHz (channel
+<span id="channel_number"></span>, <span id="channel_name"></span>)</p>
 <p>At 8pm, we transition to the <a href="https://www.specsnet.org/monday-night-net">SPECS Monday Night Net</a>.</p>
 <p>After that, typically between 20:10 and 20:20, we return to SARES Channel 1 gather late check-ins and conduct any remaining business.</p>
 <h2 id="tuesday-nights">Tuesday Nights</h2>
 <p>The Silicon Valley Emergency Communications System (SVECS) Net starts every Tuesday at 20:00 local time.</p>
 <p>The SARES weekly check-in count from the preceding Monday night will be carried over and reported to the SVECS net. If you missed the weekly Monday net and want to check in on Tuesday, you need to do so as "late checkins for Sunnyvale" which will be called on the main SVECS net right after the Sunnyvale representative has reported in.</p>
+<script src="/js/simplex.js"></script>
+<script>
+    const today = new Date();
+    simplexInfo(today)
+</script>
 
 
 
